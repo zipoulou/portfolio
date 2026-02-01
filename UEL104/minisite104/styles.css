@@ -1,0 +1,199 @@
+/* Palette principale */
+:root {
+    --blue: #052744;
+    --white: #ffffff;
+    --orange: #f5e6cd;
+    --beige: #cab7b0;
+    --green: #649469;
+    --font-main: 'Nunito', Arial, sans-serif;
+    --font-accent: 'Pirou', 'Georgia', serif;
+}
+
+/* Structure de la page */
+body {
+    font-family: var(--font-main);
+    background: var(--orange);
+    color: var(--blue);
+    margin: 0px;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background: var(--blue);
+    color: var(--white);
+    padding: 2px 1px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: var(--font-accent);
+    font-size: 20.2px;
+}
+
+/* Navigation */
+nav.chemin {
+    background: var(--beige);
+}
+
+nav {
+    margin: 5px;
+    padding: 10px ;
+    background: var(--green);
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav p a {
+  text-decoration-line: underline;
+  text-decoration-color: var(--white); 
+  text-decoration-thickness: 2px;      
+  color: var(--orange);                 
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav.chemin a {
+    color: var(--green);
+    text-decoration-color: var(--green);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+/* Sections et articles */
+section, article {
+    margin: 2rem auto;
+    padding: 1.2rem 1rem;
+    background: var(--beige);
+    border-radius: 12px;
+    box-shadow: 0 10px 5px rgba(11, 72, 124, 0.8);
+    max-width: 800px;
+}
+
+/* Paragraphes */
+p {
+    line-height: 1.5;
+    font-size: 1.05rem;
+    color: var(--blue);
+    margin: 1.75rem 0px;
+    margin-bottom: 0.5rem;
+}
+
+p1 {
+    font-family: var(--font-highlight);
+    background: var(--green);
+    color: var(--orange);
+    padding: 10px 10.4px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+
+.marge_video {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section.articles-bg {
+    background-image: url("Media/Image/sommaire.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.transparence {
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    color: var(--blue);                  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+small {
+    color: var(--beige);
+    font-size: 0.95rem;
+}
+
+/* Liens utiles (footer) */
+footer {
+    background: var(--blue);
+    padding: 1.5rem 0 0.5rem 0;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+footer h3 {
+    color: var(--blue);
+    font-family: var(--font-accent);
+    margin-top: 0;
+}
+
+footer a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--white); 
+    text-decoration-thickness: 2px;      
+    color: var(--orange);                 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: var(--blue);
+}
+
+/* Tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+    background: var(--white);
+}
+
+th, td {
+    border: 1px solid var(--blue);
+    padding: 0.7rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background: var(--green);
+    color: var(--white);
+    font-family: var(--font-accent);
+}
+
+/* Listes */
+ul {
+    margin-left: 2.5rem;
+    color: var(--white);
+}
+ol {
+    margin-left: 2.5rem;
+    color: var(--blue);
+}
+
+ol li a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--white); 
+    text-decoration-thickness: 2px;      
+    color: var(--blue);                 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ol li a:hover {
+    color: var(--green);
+}
+
+/* Modifications responsive simples */
+@media (max-width: 600px) {
+    header, nav, section, article, aside, footer {
+        padding: 0.9rem;
+        margin: 0.8rem;
+        font-size: 1rem;
+    }
+    section, article, aside {
+        max-width: 95vw;
+    }
+}
