@@ -1,0 +1,9 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# WordPress core
+wp-admin/
+wp-includes/
+wp-config.php
